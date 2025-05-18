@@ -2,12 +2,13 @@
 
 This repository contains my fine-tuned version of NanoGPT, a compact yet powerful GPT implementation by Andrej Karpathy. I experimented with various hyperparameter configurations and ultimately settled on the following setup:
 
-block_size: int = 384/n
-vocab_size: int = 50304  # Based on GPT-2's vocab size (50257), padded to the nearest multiple of 64/n
-n_layer: int = 8/n
-n_head: int = 8/n
-n_embd: int = 384/n
-dropout: float = 0.0/n
+block_size: 384  
+vocab_size: 50304   # Based on GPT-2's vocab size (50257), padded to the nearest multiple of 64  
+n_layer: 8  
+n_head: 8  
+n_embd: 384   
+dropout: 0.0  
+
 
 As the name suggests, NanoGPT is designed to be a lightweight model. This makes generating logically coherent responses more challenging compared to larger models. To address this, I explored multiple hyperparameter combinations with a strong emphasis on training loss and learning rate behavior.
 
